@@ -23,10 +23,20 @@
     </div>
     <div style="padding:2%;">
       <b>Function 3</b>
-      <p>Countdown to 0 from a number:</p>
+      <p>Countdown to 0 from a number:</pa>
       <div>
         <input type="text" name="countdownID" id="countdownID">
         <button class="btn" onclick='countdown()'>Countdown</button>
+      </div>
+      <p id="placeholder3"></p>
+    </div>
+    <div style="padding:2%;">
+      <b>Function 4</b>
+      <p>Generate a random integer number between a minimum and maximum value:</pa>
+      <div>
+        <input type="text" name="minID" id="minID">
+        <input type="text" name="maxID" id="maxID">
+        <button class="btn" onclick='genRandomNum()'>Countdown</button>
       </div>
       <p id="placeholder3"></p>
     </div>
@@ -48,6 +58,13 @@
           result += i.toString() + " ";
         }
         document.getElementById('placeholder3').innerHTML = result;
+      }
+      function genRandomNum() {
+        let min = document.querySelector("#minID").value;
+        parseInt(min);
+        let max = document.querySelector("#maxID").value;
+        parseInt(max)
+        document.getElementById('placeholder4').innerHTML = Math.round(Math.random() * (max - min) + min);
       }
     </script>
   </body>
