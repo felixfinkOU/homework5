@@ -47,12 +47,12 @@
       }
       function intSquare() {
         let num = document.querySelector("#numberID").value;
-        parseInt(num);
+        num = parseInt(num);
         document.getElementById('placeholder2').innerHTML = num*num;
       }
       function countdown() {
         let num = document.querySelector("#countdownID").value;
-        parseInt(num);
+        num = parseInt(num);
         let result = "";
         for (let i = num; i >= 0; i--) {
           result += i.toString() + " ";
@@ -61,9 +61,9 @@
       }
       function genRandomNum() {
         let min = document.querySelector("#minID").value;
-        parseInt(min);
+        min = parseInt(min);
         let max = document.querySelector("#maxID").value;
-        parseInt(max);
+        max = parseInt(max);
         let randomNum = Math.round(Math.random()*(max - min) + min);
         document.getElementById('placeholder4').innerHTML = randomNum;
       }
