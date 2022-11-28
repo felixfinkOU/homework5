@@ -64,7 +64,8 @@
         parseInt(min);
         let max = document.querySelector("#maxID").value;
         parseInt(max);
-        document.getElementById('placeholder4').innerHTML = Math.round(Math.random() * (max - min) + min);
+        let randomNum = Math.round(Math.random() * (max - min) + min);
+        document.getElementById('placeholder4').innerHTML = randumNum;
       }
     </script>
   </body>
